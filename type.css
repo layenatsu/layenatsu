@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Oswald&display=swap');
+body {
+    padding:0 2%;
+    margin:0%;
+    font-family:"noto sans jp" , sans-serif;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(32,35,44,255);
+    position: sticky;
+    top: 0%;
+    color:#fff
+    
+}
+nav.profile {
+    display:flex;
+    align-items: center;
+
+}
+
+nav  .profile img {
+    width:100px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+nav.profile h1 {
+    margin-left:5px;
+    font-size: 15px;
+}
+nav ul {
+    display:flex;
+    list-style-type:none ;
+
+}
+
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom:1px solid #fff;
+
+
+}
+nav ul li:hover {
+    border-bottom-color:#000;
+}
+.page-content {
+    margin: 4px;
+
+}
+.page-content header {
+    margin-top: 5%;
+    max-width: 80%;
+}
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family:"Oswald", sans-serif ;
+    font-size: 6vw;
+}
+.page-content header p {
+    line-height: 30px;
+    color: #818181;
+}
+.page-content header button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size:bold;
+    padding-bottom: 5px;
+    border-bottom:1px solid #ccc;
+    cursor: pointer;
+}
+.page-content header button:hover{
+    color: #ccc;
+    border-bottom-color:#000 ;
+
+}
+.page-content .presentation-image{
+    margin-top: 5%;
+}
+.page-content .presentation-image img{
+    width: 100%;
+    height:auto;
+
+}
+.page-content .projects-section{
+    margin-top: 6%;
+}
+.page-content .projects-section h1{
+    font-family: "oswald",sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+.page-content .projects-section .project{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.page-content .projects-section .projects .project{
+    margin-right: 20px;
+    max-width: 195px;
+
+}
+.page-content .projects-section .projects .project .description{
+    font-size: 13px;
+}
+.page-content .projects-section .projects .project .dates{
+    font: size 13px;
+    color: rgb(145, 145, 145)
+}
+footer{
+    margin-top: 5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    background-color: rgba(32,35,44,255);
+    color:#fff;
+    padding: 10px;
+}
+footer.colone p{
+    font-size: 12px;
+    color: #ccc;
+    cursor: pointer;
+
+
+}
+footer .colonne p:hover{
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+    nav{
+        justify-content:center ;
+    }
+
+    nav ul{
+        display:none;
+    }
+    .page-content header{
+        margin-top: 10%;
+        max-width:100%;
+    }     
+
+    .page-content .projects-section{
+        margin-top: 15%;
+    }
+    .page-content .projects-section h1{
+        font-size: 1.5em;
+    }
+
+    .page-content .projects-section .projects .project{
+        margin-right:0 ;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+footer{
+    justify-content: flex-start;
+
+}
+footer .column{
+    width:80%
+
+}
+}
